@@ -28,7 +28,7 @@ Optimiser le nombre de variables, ça arrive qu'on recrée des variables sans fo
 - 1 000 000 d'images * 300Ko * 12 mois = 3 To par an donc on peut imaginer un stockage à 50 To pour être large sur plusieurs années
 - Sur Google Cloud Storage 1$ les 50 Go : 50 000Go = 1000$
 - Stockage des liens d'images sur du NoSQL
-- Gestion du cache avec Redis
+- Gestion du cache avec Redis basée sur Firebase Data store
 
 ### Recherche
 - Elastic Search comme moteur de recherche
