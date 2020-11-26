@@ -16,17 +16,21 @@ Optimiser le nombre de variables, ça arrive qu'on recrée des variables sans fo
 # Infrastructure
 
 ### Ressources
-- 2 développeurs payés 30 000€ par an pour se charger des bugs et des évolutions de l'API = 90 000€/an.
+- 2 développeurs back end payés 30 000€ par an pour se charger des bugs et des évolutions de l'API = 90 000€/an.
 - 1 développeur ElasticSearch payé 36 000€ par an pour se charger du moteur de recherche.
-- 1 devOps payés 36 000€ par an pour se charger principalement de l'infrastructure et de la gestion du cache.
+- 1 devOps payé 36 000€ par an pour se charger principalement de l'infrastructure et de la gestion du cache.
 - ### Ressource : 162 000€/an
 
 ### Stockage 
 
-- Stockage des fichiers images : 10 000 * 300
+- Stockage des fichiers images Google Cloud Storage : Une image optimisée à environ 300Ko 
+- On part d'un nombre d'utilisateurs de 100 000 postant chacun en moyenne 10 images par mois
+- 1 000 000 d'images * 300Ko * 12 mois = 3 To par an donc on peut imaginer un stockage à 50 To pour être large sur plusieurs années
+- Sur Google Cloud Storage 1$ les 50 Go : 50 000Go = 1000$
 - Stockage des liens d'images sur du NoSQL
-
-- Gesiton du cache avec une solution AWS et Redis
+- Gestion du cache avec Redis
 
 ### Recherche
 - Elastic Search comme moteur de recherche
+
+L'avantage d'utiliser du NoSQL : Une bonne scalabilité à haut volume de données
