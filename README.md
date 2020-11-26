@@ -14,3 +14,7 @@ Optimiser le nombre de variables, ça arrive qu'on recrée des variables sans fo
 
 
 # Infrastructure
+
+- 5 développeurs payés 30 000€ par an pour se charger des bugs et des évolutions de l'API = 150 000€/an
+- 2 devOps payés 36 000€ par an pour se charger principalement de l'infrastructure et de la gestion du cache = 72 000€
+- ### Ressource : 222 000€/an
